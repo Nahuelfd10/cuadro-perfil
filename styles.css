@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root {
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    background-color: var(--dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vh bottom 50vh, left 50vh top 50vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.card {
+    background-color: white;
+    width: 326px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 7px 7px 20px var(--very-dark-desaturated-blue);
+    margin-bottom: 30px;
+}
+
+.card-header {
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.411);
+}
+
+.card-body-img {
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: calc(-48px - 5px);
+}
+
+.card-body-title span {
+    color: var(--dark-gray);
+    font-weight: 400;
+    margin-left: 7px;
+}
+
+.card-body-title {
+    margin: 20px 0px 10px 0px;
+}
+
+.card-body-city {
+    color: var(--dark-gray);
+    font-weight: 400;
+    padding-bottom: 15px;
+    margin: 0px 0px 15px 0px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-footer-social {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.card-footer-social p {
+    letter-spacing: 1px;
+    color: var(--dark-gray);
+    font-size: 12px;
+    margin: 3px 0px 5px 0px;
+}
+
+.card-footer-social h3 {
+    margin: 15px 0px 3px 0px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    cursor: pointer;
+}
+
+.attribution a:hover {
+    color: orange;
+}
